@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Kuliah Binus/MLops/crop-recommandtion-app/mlruns/822933325819802530/4d437b9644fb49359ee2f4ebc10ea106/artifacts
+end_time: 1762930101696
+entry_point_name: ''
+experiment_id: '822933325819802530'
+lifecycle_stage: active
+run_id: 4d437b9644fb49359ee2f4ebc10ea106
+run_name: SVC
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762930099632
+status: 3
+tags: []
+user_id: PIik

@@ -1,0 +1,10 @@
+artifact_location: file:///d:/Kuliah Binus/MLops/crop-recommandtion-app/mlruns/822933325819802530/models/m-b6535957b6524c1ca9236708c6756ded/artifacts
+creation_timestamp: 1762930099862
+experiment_id: '822933325819802530'
+last_updated_timestamp: 1762930101687
+model_id: m-b6535957b6524c1ca9236708c6756ded
+model_type: null
+name: model
+source_run_id: 4d437b9644fb49359ee2f4ebc10ea106
+status: 2
+status_message: null
