@@ -114,8 +114,13 @@ if st.sidebar.button("Dapatkan Rekomendasi"):
                     st.markdown(f"## {i+1}.")
                 with col2:
                     st.success(f"**{top_3_crops[i].capitalize()}**")
-                    st.progress(int(top_3_probs[i] * 100))
-                    st.markdown(f"**Probabilitas: {top_3_probs[i]*100:.2f}%**")
+                    
+                    # Validasi dan konversi probabilitas ke nilai 0-100
+                    prob_value = float(top_3_probs[i])
+                    prob_percentage = int(np.clip(prob_value * 100, 0, 100))
+                    
+                    st.progress(prob_percentage)
+                    st.markdown(f"**Probabilitas: {prob_percentage}%**")
                     st.markdown("---")
 
         except Exception as e:
