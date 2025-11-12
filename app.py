@@ -27,6 +27,23 @@ def load_resources():
             
         with open(SCALER_PATH, 'rb') as f:
             scaler = pickle.load(f)
+        
+        # Patch untuk monotonic_cst attribute error (kompatibilitas scikit-learn)
+        def _patch_monotonic_attr(estimator):
+            if hasattr(estimator, "estimators_"):  # Ensemble models
+                for sub in estimator.estimators_:
+                    if not hasattr(sub, "monotonic_cst"):
+                        setattr(sub, "monotonic_cst", None)
+            if hasattr(estimator, "tree_") and not hasattr(estimator, "monotonic_cst"):
+                setattr(estimator, "monotonic_cst", None)
+        
+        # Apply patch ke model dalam pipeline
+        try:
+            model_in_pipeline = model.named_steps.get("model", None)
+            if model_in_pipeline is not None:
+                _patch_monotonic_attr(model_in_pipeline)
+        except:
+            pass
             
         return model, classes, scaler
     except Exception as e:
