@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Kuliah Binus/MLops/crop-recommandtion-app/mlruns/822933325819802530/7b5f4f3bb85c4820a62375b07dc3d75b/artifacts
+end_time: 1763252269823
+entry_point_name: ''
+experiment_id: '822933325819802530'
+lifecycle_stage: active
+run_id: 7b5f4f3bb85c4820a62375b07dc3d75b
+run_name: LogisticRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763252265732
+status: 3
+tags: []
+user_id: PIik

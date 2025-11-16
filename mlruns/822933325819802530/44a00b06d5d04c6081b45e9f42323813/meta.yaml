@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Kuliah Binus/MLops/crop-recommandtion-app/mlruns/822933325819802530/44a00b06d5d04c6081b45e9f42323813/artifacts
+end_time: 1763252272347
+entry_point_name: ''
+experiment_id: '822933325819802530'
+lifecycle_stage: active
+run_id: 44a00b06d5d04c6081b45e9f42323813
+run_name: RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763252269827
+status: 3
+tags: []
+user_id: PIik
